@@ -1,0 +1,35 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="{% static 'blog/main.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>First Django Application</h1>
+        </div>
+        <div class="nav-items">
+            <a href="{% url 'home_page' %}">Home</a>
+            <a href="{% url 'post_create' %}">Create a post</a>
+            <a href="{% url 'about_page' %}">About</a>
+        </div>
+    </header>
+
+    <main>
+
+        {% block content %}
+
+        {% endblock content %}
+
+    </main>
+</body>
+
+</html>

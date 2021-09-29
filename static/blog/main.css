@@ -1,0 +1,69 @@
+*{
+    padding:0;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+a{
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: dodgerblue;
+    color:white
+}
+
+.nav-items{
+    padding:20px;
+}
+
+.nav-items a{
+    color:white;
+    text-transform: capitalize;
+}
+main{
+    width:80%;
+    margin:50px auto;
+}
+
+
+.post{
+    padding:18px;
+}
+
+.post-title{
+    font-size:30px;
+    color:dodgerblue;
+}
+
+.options{
+    padding:20px;
+    margin-top: 40px;
+}
+
+.options a{
+    padding:15px;
+    color:dodgerblue;
+}
+
+.btn{
+    padding: 15px;
+    border-radius: 7px;
+    border: none;
+    background-color: dodgerblue;
+    color: white;
+}
+input[type="text"]{
+    width:100%;
+    padding:5px;
+}
+
+textarea{
+    width: 100%;
+}
+
+.form{
+    width:50%;
+    margin: auto;
+}

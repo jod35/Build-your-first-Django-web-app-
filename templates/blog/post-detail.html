@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1 class="post-title">{{post.title}}</h1>
+    <p class="post-content">{{ post.content }}</p>
+
+  <div class="options">
+    <small>
+        <a href="{% url 'home_page' %}">Back</a> |
+    </small>
+    <small>
+        <a href="{% url 'post_update' post.id%}">Update</a> |
+    </small>
+    <small>
+        <a href="{% url 'post_delete' post.id%}">Delete</a>
+    </small>
+  </div>
+{% endblock content %}
+    
